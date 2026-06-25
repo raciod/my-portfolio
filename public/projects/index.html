@@ -17,7 +17,10 @@
   body{background:#1b1d1e}body #terminal{color:#bbb}body #user{color:#23e298}body #dir{color:#d08010}body .Typewriter__cursor{color:#bbb}a{color:#bbb}
 </style>
 
-</head><body><div id="content">
+    
+    <link rel="stylesheet" href="/css/mobile-fix.css">
+</head>
+<body><div id="content">
     
     
     
@@ -70,11 +73,11 @@
         return parsed;
     }
 
-    const titleDelay = parseDelay("0"),
-        contentDelay = parseDelay("0");
+    const titleDelay = parseDelay("20"),
+        contentDelay = parseDelay("10");
     const typeeffetct = async () => {
         await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0027title\u0027\u003eProjects\u003c\/h1\u003e\u003c\/span\u003e", "activity-title", titleDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0022cool-projects\u0022\u003eCool Projects\u003c\/h1\u003e\n\u003cp\u003eHere is a list of things I have built:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/github.com\/your-username\/project1\u0022\u003eProject 1\u003c\/a\u003e\u003c\/strong\u003e - A cool system tool built in C\u002b\u002b.\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/github.com\/your-username\/project2\u0022\u003eProject 2\u003c\/a\u003e\u003c\/strong\u003e - An automated script framework written in Python.\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/github.com\/your-username\/project3\u0022\u003eProject 3\u003c\/a\u003e\u003c\/strong\u003e - A Linux security auditing utility.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/span\u003e", "activity-content", contentDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0022real-projects\u0022\u003eReal Projects\u003c\/h1\u003e\n\u003cp\u003eHere are the tools I\u0026rsquo;m actively developing:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/github.com\/raciod\/AzN\u0022\u003eAzN\u003c\/a\u003e\u003c\/strong\u003e - Check out the repository for my AzN project.\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/github.com\/raciod\/LAN-Mapper\u0022\u003eLAN-Mapper\u003c\/a\u003e\u003c\/strong\u003e - An automated network mapping and discovery utility.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/span\u003e", "activity-content", contentDelay);
         return;
     }
 

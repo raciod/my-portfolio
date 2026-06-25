@@ -17,7 +17,10 @@
   body{background:#1b1d1e}body #terminal{color:#bbb}body #user{color:#23e298}body #dir{color:#d08010}body .Typewriter__cursor{color:#bbb}a{color:#bbb}
 </style>
 
-</head><body><div id="content">
+    
+    <link rel="stylesheet" href="/css/mobile-fix.css">
+</head>
+<body><div id="content">
     
     
     
@@ -70,8 +73,8 @@
         return parsed;
     }
 
-    const titleDelay = parseDelay("0"),
-        contentDelay = parseDelay("0");
+    const titleDelay = parseDelay("20"),
+        contentDelay = parseDelay("10");
     const typeeffetct = async () => {
         await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0027title\u0027\u003eLinks\u003c\/h1\u003e\u003c\/span\u003e", "activity-title", titleDelay);
         await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0022connect-with-me\u0022\u003eConnect With Me\u003c\/h1\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/github.com\/your-username\u0022\u003eGitHub\u003c\/a\u003e\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ca href=\u0022https:\/\/linkedin.com\/in\/your-username\u0022\u003eLinkedIn\u003c\/a\u003e\u003c\/strong\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/span\u003e", "activity-content", contentDelay);

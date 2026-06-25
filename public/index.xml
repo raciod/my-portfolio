@@ -32,7 +32,7 @@
 				<link>http://localhost:1313/projects/</link>
 				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/projects/</guid>
-				<description>&lt;h1 id=&#34;cool-projects&#34;&gt;Cool Projects&lt;/h1&gt;&#xA;&lt;p&gt;Here is a list of things I have built:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username/project1&#34;&gt;Project 1&lt;/a&gt;&lt;/strong&gt; - A cool system tool built in C++.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username/project2&#34;&gt;Project 2&lt;/a&gt;&lt;/strong&gt; - An automated script framework written in Python.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username/project3&#34;&gt;Project 3&lt;/a&gt;&lt;/strong&gt; - A Linux security auditing utility.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+				<description>&lt;h1 id=&#34;real-projects&#34;&gt;Real Projects&lt;/h1&gt;&#xA;&lt;p&gt;Here are the tools I&amp;rsquo;m actively developing:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/raciod/AzN&#34;&gt;AzN&lt;/a&gt;&lt;/strong&gt; - Check out the repository for my AzN project.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/raciod/LAN-Mapper&#34;&gt;LAN-Mapper&lt;/a&gt;&lt;/strong&gt; - An automated network mapping and discovery utility.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>
 </rss>

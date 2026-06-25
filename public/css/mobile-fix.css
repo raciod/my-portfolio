@@ -1,0 +1,26 @@
+/* Global Mobile Optimization */
+body {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box;
+}
+
+/* Force long URLs or terminal outputs to wrap */
+.stdout, .command, .ps1, a {
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important;
+}
+
+/* Make sure the main terminal container doesn't overflow */
+.terminal {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Bumping up mobile readability with crisp line spacing */
+@media (max-width: 600px) {
+    body, .stdout, .command, .ps1, pre, code {
+        font-size: 1.15rem !important; /* Larger crisp font */
+        line-height: 1.4 !important;   /* Perfect terminal line spacing */
+    }
+}
