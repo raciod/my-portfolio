@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Projects on raciod@portfolio [FR]</title>
+		<link>http://localhost:1313/fr/projects/</link>
+		<description>Recent content in Projects on raciod@portfolio [FR]</description>
+		<generator>Hugo</generator>
+		<language>fr-fr</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/fr/projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Mon Premier Projet</title>
+				<link>http://localhost:1313/fr/projects/my-first-project/</link>
+				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/fr/projects/my-first-project/</guid>
+				<description>&lt;p&gt;C&amp;rsquo;est ici que je vais documenter les détails de mon projet en français.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
