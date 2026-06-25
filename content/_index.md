@@ -3,6 +3,4 @@ title: "Home"
 date: 2026-06-25
 ---
 
-# Hello World
-
-Welcome to my bilingual terminal portfolio. Use the menu above to navigate!
+Hi welcome to my space im a student , i love computers , i love tryring stuff , linux, and security and programming, this my space to share what i care about
