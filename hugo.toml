@@ -1,4 +1,4 @@
-baseURL = 'https://raciod.com/' 
+baseURL = 'https://raciod.com/'
 theme = 'terminal'
 
 [params]
