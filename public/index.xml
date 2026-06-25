@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>raciod@portfolio</title>
+		<title>Home on My Portfolio</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content on raciod@portfolio</description>
+		<description>Recent content in Home on My Portfolio</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -14,18 +14,25 @@
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>About Me</title>
-				<link>http://localhost:1313/about/</link>
+				<title>Blogs</title>
+				<link>http://localhost:1313/blogs/</link>
 				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;p&gt;Welcome to my terminal. I am a developer setting up my personal portfolio space.&lt;/p&gt;</description>
+				<guid>http://localhost:1313/blogs/</guid>
+				<description>&lt;h1 id=&#34;my-thoughts--guides&#34;&gt;My Thoughts &amp;amp; Guides&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/linux/&#34;&gt;Getting Started with Linux Customization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/networking/&#34;&gt;Network Architecture Basics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
-				<title>My First Project</title>
-				<link>http://localhost:1313/projects/my-first-project/</link>
+				<title>Links</title>
+				<link>http://localhost:1313/links/</link>
 				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/projects/my-first-project/</guid>
-				<description>&lt;p&gt;This is where I will document my English project details.&lt;/p&gt;</description>
+				<guid>http://localhost:1313/links/</guid>
+				<description>&lt;h1 id=&#34;connect-with-me&#34;&gt;Connect With Me&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://linkedin.com/in/your-username&#34;&gt;LinkedIn&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Projects</title>
+				<link>http://localhost:1313/projects/</link>
+				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/</guid>
+				<description>&lt;h1 id=&#34;cool-projects&#34;&gt;Cool Projects&lt;/h1&gt;&#xA;&lt;p&gt;Here is a list of things I have built:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username/project1&#34;&gt;Project 1&lt;/a&gt;&lt;/strong&gt; - A cool system tool built in C++.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username/project2&#34;&gt;Project 2&lt;/a&gt;&lt;/strong&gt; - An automated script framework written in Python.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/your-username/project3&#34;&gt;Project 3&lt;/a&gt;&lt;/strong&gt; - A Linux security auditing utility.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>
 </rss>

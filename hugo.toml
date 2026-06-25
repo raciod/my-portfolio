@@ -1,49 +1,37 @@
-baseURL = 'https://raciod.com/'
-theme = 'terminal'
+baseURL = 'http://raciod.com/'
+languageCode = 'en-us'
+title = 'My Portfolio'
+theme = 'hugo-theme-shell'
 
-[params]
-  themeColor = 'green' 
+[Params]
+  description = "raciod's Portfolio"
 
-# ==========================================
-# ENGLISH CONFIGURATION (Default)
-# ==========================================
-[languages.en]
-  languageCode = 'en-us'
-  languageName = 'English'
-  weight = 1
-  title = 'raciod@portfolio'
+[Params.Terminal]
+  scheme = "monokai"
+  userName = "raciod"
+  pcName = "84"
+  workDir = "myspace"
+  profile = "profile.txt"
+  
+  description = """
+Hi, welcome to my space! I am a student.
+I love computers, trying new things, Linux, security, and programming.
+This is my space to share what I care about.
+  """
+  
+  # Main Terminal Speeds
+  ps1Delay = 20
+  commandDelay = 50
+  stdoutDelay = 10
 
-  [languages.en.params]
-    logoText = 'raciod@192:~$'
-    description = 'Personal developer portfolio.'
+  # Subpage Speeds (Prepped for Vim later)
+  titleDelay = 20
+  contentDelay = 10
 
-  [[languages.en.menu.main]]
-    name = 'About'
-    url = '/about/'
-    weight = 1
-  [[languages.en.menu.main]]
-    name = 'Projects'
-    url = '/projects/'
-    weight = 2
-
-# ==========================================
-# FRENCH CONFIGURATION
-# ==========================================
-[languages.fr]
-  languageCode = 'fr-fr'
-  languageName = 'Français'
-  weight = 2
-  title = 'raciod@portfolio [FR]'
-
-  [languages.fr.params]
-    logoText = 'raciod@192:~$'
-    description = 'Portfolio de développement personnel.'
-
-  [[languages.fr.menu.main]]
-    name = 'À Propos'
-    url = '/about/'
-    weight = 1
-  [[languages.fr.menu.main]]
-    name = 'Projets'
-    url = '/projects/'
-    weight = 2
+[Params.Tree]
+  use = true
+  folderName = "my_activity"
+  files = [
+    ["links", "/links/"],
+    ["projects", "/projects/"]
+  ]
