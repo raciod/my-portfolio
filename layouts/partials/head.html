@@ -1,9 +1,11 @@
 <head>
-    <title>{{- if .IsHome }}{{ .Site.Title }}{{- else }}{{ .Title }}{{- end }}</title>
+    <title>{{ if .IsHome }}rachid@terminal:~{{ else }}rachid@terminal:~/{{ .Title | lower }}{{ end }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    {{ partial "style.html" . }}
     
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2260%22 font-family=%22monospace%22 font-weight=%22bold%22 fill=%22%2389b4fa%22>%3E_</text></svg>">
+    
+    {{ partial "style.html" . }}
     <link rel="stylesheet" href="/css/mobile-fix.css">
 </head>
