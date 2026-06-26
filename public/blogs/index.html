@@ -1,88 +1,214 @@
-<!DOCTYPE html>
-<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Blogs</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="" />
-    <style>
-  @import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";:root{--cursor-visibility:hidden}html,body{width:100%;height:100%;overflow:auto;font-family:inconsolata,monospace;font-size:4vmin;line-height:4.1vmin;font-weight:400}body{margin:0;display:flex;flex-direction:row;justify-content:center;align-items:center}#content{min-width:82vmin;min-height:82vmin}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{border-radius:10px;box-shadow:inset 0 0 1px white}::-webkit-scrollbar-thumb{border-radius:10px;box-shadow:0 0 0 1px white}.cursor,#activity-title:after,#activity-content:after,#cd:after,#whoami:after,#cat:after,#tree:after{visibility:var(--cursor-visibility);content:"|";overflow:hidden;color:#fff;animation:blink 500ms linear infinite alternate}@keyframes blink{0%{opacity:0}100%{opacity:1}}@media only screen and (min-width:768px){body{font-size:2.5vmin;line-height:2.6vmin}#content{min-width:60vmin}}:root{--cursor-visibility:hidden}body{align-items:unset;overflow-y:scroll}#content{max-width:80vmin}pre{overflow-x:scroll;white-space:pre}@keyframes blink{0%{opacity:0}100%{opacity:1}}
 
-  
-  
-  
-  
-  
-  
-  
-  body{background:#1b1d1e}body #terminal{color:#bbb}body #user{color:#23e298}body #dir{color:#d08010}body .Typewriter__cursor{color:#bbb}a{color:#bbb}
+
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+     
+    html, body {
+        background-color: #1e1e2e !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100dvh !important; 
+        overflow: hidden;
+    }
+    
+    #content {
+        background-color: #1e1e2e !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .terminal::after {
+        content: none !important;
+    }
+
+    .terminal a {
+        color: #89b4fa !important;
+        text-decoration: underline !important;
+        font-weight: bold !important;
+    }
+    .terminal a:hover {
+        color: #a6e3a1 !important;
+    }
+
+     
+    .nvchad-window {
+        display: flex; 
+        flex-direction: column; 
+        height: 100dvh; 
+        justify-content: space-between; 
+        font-family: monospace; 
+        background-color: #1e1e2e; 
+        color: #cdd6f4;
+        box-sizing: border-box;
+    }
+
+    .main-area {
+        flex-grow: 1; 
+        overflow-y: auto; 
+    }
+
+    .empty-buffer {
+        color: #45475a; 
+        font-weight: bold; 
+        margin-top: 1.5rem; 
+        line-height: 1.6; 
+    }
+
+     
+    .tabline, .statusline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .status-left, .status-right {
+        display: flex;
+        align-items: center;
+    }
+
+     
+    .tab-current {
+        background-color: #313244; 
+        color: #a6e3a1; 
+        border-radius: 3px 3px 0 0; 
+        font-weight: bold; 
+    }
+
+    .btn-home {
+        text-decoration: none !important; 
+        background-color: #f38ba8; 
+        color: #11111b !important; 
+        font-weight: bold; 
+        border-radius: 3px;
+        transition: background-color 0.2s ease;
+    }
+    .btn-home:hover {
+        background-color: #f9e2af !important;
+    }
+
+    .statusline {
+        background-color: #181825; 
+        color: #cdd6f4; 
+        font-weight: bold; 
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .status-mode {
+        background-color: #b4befe; 
+        color: #11111b; 
+        text-transform: uppercase;
+    }
+
+    .status-location {
+        background-color: #a6e3a1; 
+        color: #11111b;
+    }
+
+     
+    @media (min-width: 769px) {
+        .nvchad-window { padding: 15px 20px 25px 20px; }
+        .tabline { margin-bottom: 1.5rem; border-bottom: 1px solid #313244; padding-bottom: 5px; }
+        .tab-current { padding: 4px 10px; font-size: 0.9rem; }
+        .btn-home { padding: 3px 10px; font-size: 0.85rem; }
+        
+        .statusline { font-size: 0.85rem; height: 32px; }
+        .status-mode { padding: 6px 12px; }
+        .status-file { color: #a6adc8; margin: 0 15px; }
+        .status-title { background-color: #f38ba8; color: #11111b; padding: 6px 12px; margin-right: 0; }
+        .status-location { padding: 6px 12px; }
+
+        .terminal .content, .terminal p, .terminal ul, .terminal li, .terminal span { font-size: 1.1rem !important; line-height: 1.6 !important; }
+        .terminal h1 { font-size: 1.4rem !important; margin-top: 0; }
+        .empty-buffer { font-size: 1.1rem; }
+    }
+
+     
+    @media (max-width: 768px) {
+        .nvchad-window { padding: 10px 12px 15px 12px; }
+        
+         
+        .tabline { margin-bottom: 1rem; border-bottom: 1px solid #313244; padding-bottom: 6px; }
+        .tab-current { padding: 4px 8px; font-size: 0.8rem; }
+        .btn-home { padding: 4px 8px; font-size: 0.8rem; }
+        
+         
+        .statusline { font-size: 0.75rem; height: 26px; }
+        .status-mode { padding: 5px 8px; }
+        
+         
+        .status-file { 
+            color: #a6adc8; 
+            margin: 0 8px; 
+            max-width: 110px; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space: nowrap; 
+        }
+        
+         
+        .status-title { display: none; }
+        .status-location { padding: 5px 8px; }
+
+         
+        .terminal .content, .terminal p, .terminal ul, .terminal li, .terminal span {
+            font-size: 1.15rem !important;
+            line-height: 1.5 !important;
+            white-space: pre-wrap !important; 
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+        }
+        .terminal h1 { font-size: 1.4rem !important; margin-top: 0 !important; margin-bottom: 0.75rem !important; }
+        .terminal h2 { font-size: 1.25rem !important; }
+        .empty-buffer { font-size: 1.15rem; margin-top: 0.5rem; }
+    }
 </style>
 
+<div class="nvchad-window">
+  
+  <div class="main-area">
+    <div class="tabline">
+      <span class="tab-current">
+        » blogs.md
+      </span>
+
+      <a href="/" class="btn-home">
+        ⌂ <span>[Esc] Go Home</span>
+      </a>
+    </div>
+
+    <div class="terminal">
+      <span class="content" data-delay="10">
+        <h1 id="my-thoughts--guides">My Thoughts &amp; Guides</h1>
+<ul>
+<li><a href="/linux/">Getting Started with Linux Customization</a></li>
+<li><a href="/networking/">Network Architecture Basics</a></li>
+</ul>
+
+      </span>
+    </div>
     
-    <link rel="stylesheet" href="/css/mobile-fix.css">
-</head>
-<body><div id="content">
+    <div class="empty-buffer">
+      ~<br>~
+    </div>
+  </div>
+
+  <div class="statusline">
+    <div class="status-left">
+      <span class="status-mode">NORMAL</span>
+      <span class="status-file">blogs.md</span>
+    </div>
     
-    
-    
+    <div class="status-right">
+      <span class="status-title">Blogs</span>
+      <span class="status-location">1/1</span>
+    </div>
+  </div>
+
+</div>
 
 
-    <span id="activity-title"></span> <br>
- <span id="activity-content"></span> <br>
-
-<script type="text/javascript">
-    async function typewriter(text, elementId, waitAfter) {
-        var n = 0,
-            isTag = false
-        addText = "";
-        const el = document.getElementById(elementId);
-
-        const wait = () => new Promise(r => setTimeout(r, waitAfter));
-        const nowait = () => new Promise(r => r());
-
-        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
-
-        const cursor = document.createElement('span');
-        cursor.id = "blink";
-
-        el.style.setProperty("--cursor-visibility", "visible");
-        while (n < text.length) {
-            if (text.charAt(n + 1) === "<") isTag = true;
-            if (text.charAt(n + 1) === ">") isTag = false;
-
-            if (isTag) {
-                n++;
-                continue;
-            }
-
-            requestAnimationFrame(render);
-
-            if (waitAfter === 0) {
-                await nowait();
-            } else {
-                await wait();
-            }
-
-            n++;
-        }
-        el.style.setProperty("--cursor-visibility", "collapse");
-    }
-
-    function parseDelay(d) {
-        const parsed = parseInt(d, 10);
-        if (isNaN(parsed)) return 0;
-        return parsed;
-    }
-
-    const titleDelay = parseDelay("20"),
-        contentDelay = parseDelay("10");
-    const typeeffetct = async () => {
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0027title\u0027\u003eBlogs\u003c\/h1\u003e\u003c\/span\u003e", "activity-title", titleDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0022my-thoughts--guides\u0022\u003eMy Thoughts \u0026amp; Guides\u003c\/h1\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022\/linux\/\u0022\u003eGetting Started with Linux Customization\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022\/networking\/\u0022\u003eNetwork Architecture Basics\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/span\u003e", "activity-content", contentDelay);
-        return;
-    }
-
-    typeeffetct()
-</script>
-
-        </div></body>
-</html>

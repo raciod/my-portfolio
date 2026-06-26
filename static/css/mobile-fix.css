@@ -24,3 +24,18 @@ body {
         line-height: 1.4 !important;   /* Perfect terminal line spacing */
     }
 }
+
+/* NvChad Terminal View Adaptations */
+.nvchad-window .terminal {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.nvchad-window a {
+    transition: opacity 0.2s ease;
+}
+
+.nvchad-window a:hover {
+    opacity: 0.8;
+}
