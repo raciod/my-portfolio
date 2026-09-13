@@ -21,13 +21,13 @@ This is my space to share what I care about.
   """
   
   # Main Terminal Speeds
-  ps1Delay = 20
-  commandDelay = 50
-  stdoutDelay = 10
+  ps1Delay = 15
+  commandDelay = 35
+  stdoutDelay = 7
 
   # Subpage Speeds (Prepped for Vim later)
-  titleDelay = 20
-  contentDelay = 10
+  titleDelay = 15
+  contentDelay = 7
 
 [Params.Tree]
   use = true
