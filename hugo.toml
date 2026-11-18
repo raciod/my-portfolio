@@ -23,3 +23,8 @@ theme = "PaperMod"
     name = "About"
     url = "/about/"
     weight = 3
+
+[params.assets]
+  favicon = "favicon.svg"
+  favicon16x16 = "favicon.svg"
+  favicon32x32 = "favicon.svg"

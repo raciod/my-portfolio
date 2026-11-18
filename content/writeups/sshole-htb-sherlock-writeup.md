@@ -2,9 +2,10 @@
 title: "SSHole - HTB Sherlock Write-up"
 date: 2026-11-17
 tags: ["HTB", "Sherlock", "DFIR"]
+description: "Investigating an Alpine jumpbox compromised through the *sshole OpenSSH authentication bypass (CVE-2026-123158), from initial access to network scanning and data exfiltration."
+summary: "Investigating an Alpine jumpbox compromised through the *sshole OpenSSH authentication bypass (CVE-2026-123158), from initial access to network scanning and data exfiltration."
 draft: false
 ---
-
 
 ## Task 1: What Linux distribution name and version was the targeted server running?
 
