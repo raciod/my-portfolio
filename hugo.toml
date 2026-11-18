@@ -1,38 +1,25 @@
-baseURL = 'http://raciod.com/'
-locale = 'en-us'
-title = 'rachid@terminal:~'
-theme = 'hugo-theme-shell'
+baseURL = "https://raciod.com/"
+title = "Raciod"
+theme = "PaperMod"
 
-[Params]
-  description = "raciod's Portfolio"
+[pagination]
+  pagerSize = 10
 
-[Params.Terminal]
-  scheme = "monokai"
-  userName = "raciod"
-  pcName = "84"
-  workDir = "myspace"
-  profile = "profile.txt"
-  
-  description = """
-Hi, welcome to my space! I am a student and my name is Rachid.
-I love computers, trying new things, Linux, Networks, security, and programming.
-This is my space to share what I care about.
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowToc = true
 
-  """
-  
-  # Main Terminal Speeds
-  ps1Delay = 15
-  commandDelay = 35
-  stdoutDelay = 7
-
-  # Subpage Speeds (Prepped for Vim later)
-  titleDelay = 15
-  contentDelay = 7
-
-[Params.Tree]
-  use = true
-  folderName = "my_activity"
-  files = [
-    ["links", "/links/"],
-    ["projects", "/projects/"]
-  ]
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Writeups"
+    url = "/writeups/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
